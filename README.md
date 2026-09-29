@@ -16,7 +16,15 @@
 
 Twenty years repairing hardware and running a wireless ISP taught me what breaks and who it hurts. I write software with those assumptions built in: dependencies fail, users send unexpected input, and someone has to fix it at 2am with only the logs to go on.
 
-Everything below is running code. Every number comes from the repository it describes.
+<img src="./assets/matrix-divider.svg" alt="" width="100%" />
+
+---
+
+## Currently
+
+<div align="center">
+  <img src="./assets/terminal-intro.svg" alt="Terminal session showing all three test suites passing" width="100%" />
+</div>
 
 ---
 
@@ -87,6 +95,14 @@ Everything below is running code. Every number comes from the repository it desc
 
 <div align="center">
   <img src="./assets/system-orbit.svg" alt="System map" width="92%" />
+</div>
+
+---
+
+## How a request moves
+
+<div align="center">
+  <img src="./assets/pipeline.svg" alt="Request pipeline with failure paths at each stage" width="100%" />
 </div>
 
 ---
@@ -174,6 +190,27 @@ Not a list of skills — three repositories you can clone and run.
 
 ---
 
+## Activity
+
+<div align="center">
+
+<img src="./github-metrics.svg" alt="GitHub metrics" width="82%" />
+
+<br /><br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/thuyamaungg/thuyamaungg/output/github-snake-dark.svg" />
+  <img src="https://raw.githubusercontent.com/thuyamaungg/thuyamaungg/output/github-snake.svg" alt="Contribution snake" width="96%" />
+</picture>
+
+<br /><br />
+
+<img src="./profile-3d-contrib/profile-night-view.svg" alt="3D contribution graph" width="90%" />
+
+</div>
+
+---
+
 ## Credentials
 
 **MikroTik certified** — router configuration, routing and wireless links.
@@ -191,12 +228,7 @@ Not a list of skills — three repositories you can clone and run.
 ## Role alignment
 
 <div align="center">
-
-![IT Lead](https://img.shields.io/badge/IT_Lead-0F172A?style=for-the-badge)
-![Technical Team Lead](https://img.shields.io/badge/Technical_Team_Lead-0F172A?style=for-the-badge)
-![Solutions Engineer](https://img.shields.io/badge/Solutions_Engineer-0F172A?style=for-the-badge)
-![AI Developer](https://img.shields.io/badge/AI_Developer-0F172A?style=for-the-badge)
-
+  <img src="./assets/role-bars.svg" alt="Role alignment" width="96%" />
 </div>
 
 Open to full-time roles and freelance work. Burmese, Thai and English.
