@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" width="1200" height="360" role="img" aria-label="Capability map showing where the work sits: network operations, backend and API, agent and RAG systems, testing and delivery, and frontend.">
+<defs>
+  <linearGradient id="bgC" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#050A12"/>
+    <stop offset="100%" stop-color="#07131F"/>
+  </linearGradient>
+  <linearGradient id="barA" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1E7F72"/><stop offset="100%" stop-color="#3DD6C4"/></linearGradient>
+  <linearGradient id="barB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2A4E9E"/><stop offset="100%" stop-color="#5B8CFF"/></linearGradient>
+  <linearGradient id="barC" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4B3A8C"/><stop offset="100%" stop-color="#9B86E8"/></linearGradient>
+  <linearGradient id="barD" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9A5A1C"/><stop offset="100%" stop-color="#FFA24D"/></linearGradient>
+  <pattern id="gC" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#5B8CFF" stroke-opacity=".06"/>
+  </pattern>
+  <style>
+    .hd{font:700 12px ui-monospace,Consolas,monospace;fill:#6FE3D4;letter-spacing:1.5px}
+    .lb{font:600 14px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#E4EBF5}
+    .nt{font:400 11.5px ui-monospace,Consolas,monospace;fill:#7E8FA8}
+    .bar{transform-origin:left center;animation:grow 1.6s cubic-bezier(.2,.8,.3,1) forwards;transform:scaleX(0)}
+    .b2{animation-delay:.18s}.b3{animation-delay:.36s}.b4{animation-delay:.54s}.b5{animation-delay:.72s}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .shimmer{animation:sh 3.6s ease-in-out infinite;opacity:0}
+    @keyframes sh{0%{opacity:0;transform:translateX(0)}40%{opacity:.5}100%{opacity:0;transform:translateX(620px)}}
+  </style>
+</defs>
+<rect width="1200" height="360" rx="22" fill="url(#bgC)"/>
+<rect width="1200" height="360" rx="22" fill="url(#gC)"/>
+<rect x="1" y="1" width="1198" height="358" rx="22" fill="none" stroke="#7FA8E0" stroke-opacity=".16"/>
+
+<text class="hd" x="48" y="46">WHERE THE WORK SITS</text>
+
+<g transform="translate(48,86)">
+  <text class="lb" x="0" y="0">Network operations</text>
+  <rect x="300" y="-14" width="640" height="18" rx="9" fill="#0E1826"/>
+  <rect class="bar" x="300" y="-14" width="620" height="18" rx="9" fill="url(#barA)"/>
+  <text class="nt" x="956" y="0">two decades, live infrastructure</text>
+</g>
+<g transform="translate(48,146)">
+  <text class="lb" x="0" y="0">Backend and APIs</text>
+  <rect x="300" y="-14" width="640" height="18" rx="9" fill="#0E1826"/>
+  <rect class="bar b2" x="300" y="-14" width="540" height="18" rx="9" fill="url(#barB)"/>
+  <text class="nt" x="956" y="0">FastAPI, Flask, SQLAlchemy</text>
+</g>
+<g transform="translate(48,206)">
+  <text class="lb" x="0" y="0">Agents and retrieval</text>
+  <rect x="300" y="-14" width="640" height="18" rx="9" fill="#0E1826"/>
+  <rect class="bar b3" x="300" y="-14" width="500" height="18" rx="9" fill="url(#barC)"/>
+  <text class="nt" x="956" y="0">pydantic-ai, ChromaDB, Ollama</text>
+</g>
+<g transform="translate(48,266)">
+  <text class="lb" x="0" y="0">Testing and delivery</text>
+  <rect x="300" y="-14" width="640" height="18" rx="9" fill="#0E1826"/>
+  <rect class="bar b4" x="300" y="-14" width="530" height="18" rx="9" fill="url(#barD)"/>
+  <text class="nt" x="956" y="0">pytest, Docker, Nginx</text>
+</g>
+<g transform="translate(48,326)">
+  <text class="lb" x="0" y="0">Frontend</text>
+  <rect x="300" y="-14" width="640" height="18" rx="9" fill="#0E1826"/>
+  <rect class="bar b5" x="300" y="-14" width="300" height="18" rx="9" fill="url(#barB)"/>
+  <text class="nt" x="956" y="0">HTML, CSS, JavaScript, Gradio</text>
+</g>
+</svg>

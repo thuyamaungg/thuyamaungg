@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" role="img" aria-label="System map: production systems at the core, surrounded by agentic orchestration, retrieval and RAG, network engineering, and delivery and operations.">
+<defs>
+  <radialGradient id="bgO" cx="50%" cy="48%" r="72%">
+    <stop offset="0" stop-color="#0A1B33"/>
+    <stop offset="40%" stop-color="#06121F"/>
+    <stop offset="100%" stop-color="#03070E"/>
+  </radialGradient>
+  <linearGradient id="tealBlue" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#3DD6C4"/>
+    <stop offset="55%" stop-color="#5B8CFF"/>
+    <stop offset="100%" stop-color="#8B6BE0"/>
+  </linearGradient>
+  <linearGradient id="cardO" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0C1626"/>
+    <stop offset="100%" stop-color="#040A13"/>
+  </linearGradient>
+  <filter id="soft2" x="-40%" y="-40%" width="180%" height="180%">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.24 0 0 0 0 0.84 0 0 0 0 0.77 0 0 0 .85 0" result="g"/>
+    <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <filter id="heavy2" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="11" result="b"/>
+    <feColorMatrix in="b" type="matrix" values="0 0 0 0 0.16 0 0 0 0 0.72 0 0 0 0 0.9 0 0 0 .7 0" result="g"/>
+    <feMerge><feMergeNode in="g"/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <pattern id="gridO" width="42" height="42" patternUnits="userSpaceOnUse">
+    <path d="M42 0H0V42" fill="none" stroke="#1B2A44" stroke-width="1" opacity=".5"/>
+  </pattern>
+  <style>
+    .title{font:800 34px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#F2F6FC;letter-spacing:-.4px}
+    .sub{font:400 15px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#8FA0BA}
+    .mini{font:700 11px ui-monospace,Consolas,monospace;fill:#6FE3D4;letter-spacing:1.6px}
+    .lab{font:700 16px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#F2F6FC}
+    .bod{font:500 12.5px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#A9B8CD}
+    .tiny{font:600 11px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#8FA0BA}
+    .ring{fill:none;stroke-width:1.7;stroke-dasharray:14 14;opacity:.7;animation:dashO 12s linear infinite}
+    .ring2{animation-duration:16s;animation-direction:reverse;opacity:.42}
+    .ring3{animation-duration:20s;opacity:.26}
+    .orb{transform-origin:640px 380px;animation:spinO 26s linear infinite}
+    .orb2{transform-origin:640px 380px;animation:spinRO 32s linear infinite}
+    .fl{animation:floatO 4.8s ease-in-out infinite}
+    .f2{animation-delay:.7s}.f3{animation-delay:1.4s}.f4{animation-delay:2.1s}
+    .pl{animation:pulseO 2.9s ease-in-out infinite}
+    .scan{transform-origin:640px 380px;animation:spinO 9s linear infinite;opacity:.3}
+    .wire{fill:none;stroke:#3DD6C4;stroke-width:2;stroke-dasharray:8 12;opacity:.66;animation:dashO 6s linear infinite}
+    @keyframes dashO{to{stroke-dashoffset:-220}}
+    @keyframes spinO{to{transform:rotate(360deg)}}
+    @keyframes spinRO{to{transform:rotate(-360deg)}}
+    @keyframes floatO{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes pulseO{0%,100%{opacity:.6}50%{opacity:1}}
+  </style>
+</defs>
+
+<rect width="1280" height="720" rx="30" fill="url(#bgO)"/>
+<rect x="34" y="34" width="1212" height="652" rx="26" fill="url(#gridO)" opacity=".4"/>
+<rect x="34" y="34" width="1212" height="652" rx="26" fill="none" stroke="#1E3A6E" stroke-width="1.2" opacity=".85"/>
+
+<g opacity=".22">
+  <circle cx="142" cy="112" r="86" fill="#3DD6C4" filter="url(#heavy2)"/>
+  <circle cx="1128" cy="596" r="98" fill="#7A5BD0" filter="url(#heavy2)"/>
+</g>
+
+<text x="70" y="86" class="title">SYSTEM MAP</text>
+<text x="72" y="114" class="sub">Agent orchestration · retrieval · network engineering · delivery</text>
+
+<g transform="translate(958 58)">
+  <rect width="222" height="46" rx="23" fill="#03070E" stroke="#3DD6C4" stroke-width="1.1" opacity=".95"/>
+  <circle cx="30" cy="23" r="7" fill="#33C26E" filter="url(#soft2)"/>
+  <text x="48" y="28" class="mini">SHIPPED, NOT PLANNED</text>
+</g>
+
+<circle class="ring" cx="640" cy="380" r="238" stroke="url(#tealBlue)"/>
+<circle class="ring ring2" cx="640" cy="380" r="184" stroke="#3DD6C4"/>
+<circle class="ring ring3" cx="640" cy="380" r="293" stroke="#7A5BD0"/>
+<ellipse class="ring ring2" cx="640" cy="380" rx="348" ry="116" stroke="#33C2A0" opacity=".32"/>
+<ellipse class="ring" cx="640" cy="380" rx="118" ry="326" stroke="#5B8CFF" opacity=".26"/>
+
+<path class="scan" d="M640 380 L640 85 A295 295 0 0 1 780 121 Z" fill="url(#tealBlue)" opacity=".16"/>
+
+<g class="orb"><circle cx="640" cy="142" r="7" fill="#3DD6C4" filter="url(#soft2)"/><circle cx="878" cy="380" r="5" fill="#9B86E8" filter="url(#soft2)"/></g>
+<g class="orb2"><circle cx="640" cy="196" r="6" fill="#33C2A0" filter="url(#soft2)"/><circle cx="824" cy="380" r="4" fill="#FFA24D" filter="url(#soft2)"/></g>
+
+<path class="wire" d="M640 380 C504 300 405 235 286 205"/>
+<path class="wire" d="M640 380 C780 300 870 236 994 205"/>
+<path class="wire" d="M640 380 C502 455 405 520 286 555"/>
+<path class="wire" d="M640 380 C778 455 872 520 994 555"/>
+
+<g filter="url(#heavy2)">
+  <circle cx="640" cy="380" r="108" fill="#03070E" stroke="url(#tealBlue)" stroke-width="3"/>
+  <circle cx="640" cy="380" r="82" fill="#071322" stroke="#1E3A6E" stroke-width="1.5"/>
+  <circle class="pl" cx="640" cy="380" r="54" fill="none" stroke="#3DD6C4" stroke-width="2" opacity=".62"/>
+</g>
+<text x="640" y="352" text-anchor="middle" class="mini">THREE SYSTEMS RUNNING</text>
+<text x="640" y="386" text-anchor="middle" style="font:800 29px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#F2F6FC">BUILT TO</text>
+<text x="640" y="416" text-anchor="middle" style="font:800 29px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#6FE3D4">STAY UP</text>
+<text x="640" y="447" text-anchor="middle" class="tiny">tested · containerised · documented</text>
+
+<g class="fl">
+  <rect x="88" y="151" width="310" height="130" rx="26" fill="url(#cardO)" stroke="#3DD6C4" stroke-width="1.6"/>
+  <circle cx="128" cy="191" r="15" fill="url(#tealBlue)" filter="url(#soft2)"/>
+  <text x="158" y="196" class="lab">AGENT ORCHESTRATION</text>
+  <text x="128" y="232" class="bod">typed output · routing · fallback</text>
+  <text x="128" y="255" class="bod">confidence thresholds · human review</text>
+</g>
+<g class="fl f2">
+  <rect x="882" y="151" width="310" height="130" rx="26" fill="url(#cardO)" stroke="#7A5BD0" stroke-width="1.6"/>
+  <circle cx="922" cy="191" r="15" fill="url(#tealBlue)" filter="url(#soft2)"/>
+  <text x="952" y="196" class="lab">RETRIEVAL / RAG</text>
+  <text x="922" y="232" class="bod">embeddings · vector search · eval</text>
+  <text x="922" y="255" class="bod">verified citations · local models</text>
+</g>
+<g class="fl f3">
+  <rect x="88" y="499" width="310" height="130" rx="26" fill="url(#cardO)" stroke="#33C2A0" stroke-width="1.6"/>
+  <circle cx="128" cy="539" r="15" fill="#33C2A0" filter="url(#soft2)"/>
+  <text x="158" y="544" class="lab">NETWORK ENGINEERING</text>
+  <text x="128" y="580" class="bod">MikroTik · RouterOS · wireless links</text>
+  <text x="128" y="603" class="bod">tower infrastructure · incident response</text>
+</g>
+<g class="fl f4">
+  <rect x="882" y="499" width="310" height="130" rx="26" fill="url(#cardO)" stroke="#FFA24D" stroke-width="1.6"/>
+  <circle cx="922" cy="539" r="15" fill="#FFA24D" filter="url(#soft2)"/>
+  <text x="952" y="544" class="lab">DELIVERY / OPS</text>
+  <text x="922" y="580" class="bod">Docker · Nginx · pytest</text>
+  <text x="922" y="603" class="bod">failure isolation · concurrency safety</text>
+</g>
+
+<g transform="translate(277 650)">
+  <rect width="726" height="36" rx="18" fill="#03070E" stroke="#1E3A6E" opacity=".94"/>
+  <circle cx="35" cy="18" r="5" fill="#3DD6C4"/><text x="52" y="23" class="tiny">Diagnose</text>
+  <circle cx="176" cy="18" r="5" fill="#5B8CFF"/><text x="193" y="23" class="tiny">Build</text>
+  <circle cx="296" cy="18" r="5" fill="#7A5BD0"/><text x="313" y="23" class="tiny">Test</text>
+  <circle cx="412" cy="18" r="5" fill="#FFA24D"/><text x="429" y="23" class="tiny">Ship</text>
+  <circle cx="530" cy="18" r="5" fill="#33C26E"/><text x="547" y="23" class="tiny">Keep it running</text>
+</g>
+</svg>

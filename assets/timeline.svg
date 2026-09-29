@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Experience timeline: hardware repair, then wireless ISP network engineering, then MikroTik certification, then AI development.">
+<defs>
+  <linearGradient id="bgT" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#050A12"/>
+    <stop offset="100%" stop-color="#07131F"/>
+  </linearGradient>
+  <linearGradient id="lineG" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#33C2A0"/>
+    <stop offset="50%" stop-color="#5B8CFF"/>
+    <stop offset="100%" stop-color="#3DD6C4"/>
+  </linearGradient>
+  <pattern id="gT" width="34" height="34" patternUnits="userSpaceOnUse">
+    <path d="M34 0H0V34" fill="none" stroke="#5B8CFF" stroke-opacity=".06"/>
+  </pattern>
+  <style>
+    .hd{font:700 12px ui-monospace,Consolas,monospace;fill:#6FE3D4;letter-spacing:1.5px}
+    .yr{font:700 13px ui-monospace,Consolas,monospace;fill:#FFA24D}
+    .tl{font:700 15px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#F2F6FC}
+    .tb{font:400 12px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#8FA0BA}
+    .track{stroke-dasharray:6 8;animation:m 3s linear infinite}
+    @keyframes m{to{stroke-dashoffset:-28}}
+    .nd{animation:pp 3s ease-in-out infinite}
+    .n2{animation-delay:.6s}.n3{animation-delay:1.2s}.n4{animation-delay:1.8s}
+    @keyframes pp{0%,100%{r:7;opacity:.65}50%{r:10;opacity:1}}
+  </style>
+</defs>
+<rect width="1200" height="300" rx="22" fill="url(#bgT)"/>
+<rect width="1200" height="300" rx="22" fill="url(#gT)"/>
+<rect x="1" y="1" width="1198" height="298" rx="22" fill="none" stroke="#7FA8E0" stroke-opacity=".16"/>
+
+<text class="hd" x="48" y="46">TWENTY YEARS, ONE THROUGH-LINE: KEEPING THINGS RUNNING</text>
+
+<path class="track" d="M110 150 H 1090" stroke="url(#lineG)" stroke-width="2.5" fill="none"/>
+
+<g>
+  <circle class="nd" cx="150" cy="150" r="8" fill="#33C2A0"/>
+  <text class="yr" x="112" y="106">EARLY</text>
+  <text class="tl" x="112" y="196">Hardware repair</text>
+  <text class="tb" x="112" y="218">Component-level diagnosis,</text>
+  <text class="tb" x="112" y="236">at volume, with someone waiting</text>
+</g>
+<g>
+  <circle class="nd n2" cx="450" cy="150" r="8" fill="#5B8CFF"/>
+  <text class="yr" x="412" y="106">2005 →</text>
+  <text class="tl" x="412" y="196">Running the shop</text>
+  <text class="tb" x="412" y="218">Sales, service and quoting —</text>
+  <text class="tb" x="412" y="236">standing behind the work after</text>
+</g>
+<g>
+  <circle class="nd n3" cx="750" cy="150" r="8" fill="#3DD6C4"/>
+  <text class="yr" x="712" y="106">WISP</text>
+  <text class="tl" x="712" y="196">Network engineering</text>
+  <text class="tb" x="712" y="218">MikroTik certified. Towers, links,</text>
+  <text class="tb" x="712" y="236">and 2am incident response</text>
+</g>
+<g>
+  <circle class="nd n4" cx="1050" cy="150" r="8" fill="#FFA24D"/>
+  <text class="yr" x="1012" y="106">NOW</text>
+  <text class="tl" x="1012" y="196">AI development</text>
+  <text class="tb" x="1012" y="218">Three Python systems,</text>
+  <text class="tb" x="1012" y="236">tested and containerised</text>
+</g>
+</svg>
