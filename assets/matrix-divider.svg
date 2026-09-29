@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" width="1200" height="120" role="img" aria-label="Divider showing the working loop: diagnose, build, test, ship, keep it running.">
+<defs>
+  <linearGradient id="bgM" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#050A12"/><stop offset="50%" stop-color="#08192A"/><stop offset="100%" stop-color="#050A12"/>
+  </linearGradient>
+  <linearGradient id="beam" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#3DD6C4" stop-opacity="0"/>
+    <stop offset="45%" stop-color="#3DD6C4" stop-opacity=".75"/>
+    <stop offset="55%" stop-color="#5B8CFF" stop-opacity=".75"/>
+    <stop offset="1" stop-color="#5B8CFF" stop-opacity="0"/>
+  </linearGradient>
+  <style>
+    .col{animation:fall 4s linear infinite}
+    .c2{animation-delay:.7s}.c3{animation-delay:1.3s}.c4{animation-delay:2s}.c5{animation-delay:2.6s}
+    .c6{animation-delay:3.2s}.c7{animation-delay:.35s}.c8{animation-delay:1.7s}
+    @keyframes fall{0%{transform:translateY(-40px);opacity:0}25%{opacity:.75}100%{transform:translateY(150px);opacity:0}}
+    .beam{animation:run 5s ease-in-out infinite}
+    @keyframes run{0%{transform:translateX(-1200px)}100%{transform:translateX(1200px)}}
+    .g{font:600 11px ui-monospace,Consolas,monospace;fill:#4E6076}
+    .k{font:700 12px ui-monospace,Consolas,monospace;fill:#8FA0BA;letter-spacing:2px}
+    .dt{animation:bp 2.4s ease-in-out infinite}
+    .d2{animation-delay:.4s}.d3{animation-delay:.8s}.d4{animation-delay:1.2s}.d5{animation-delay:1.6s}
+    @keyframes bp{0%,100%{opacity:.4}50%{opacity:1}}
+  </style>
+</defs>
+<rect width="1200" height="120" rx="18" fill="url(#bgM)"/>
+<g class="g">
+  <text class="col" x="70" y="0">01001</text><text class="col c2" x="220" y="0">11010</text>
+  <text class="col c3" x="380" y="0">00110</text><text class="col c4" x="540" y="0">10101</text>
+  <text class="col c5" x="700" y="0">01110</text><text class="col c6" x="860" y="0">11001</text>
+  <text class="col c7" x="1010" y="0">00101</text><text class="col c8" x="1130" y="0">10011</text>
+</g>
+<rect class="beam" x="0" y="58" width="1200" height="2" fill="url(#beam)"/>
+<g transform="translate(180,66)">
+  <circle class="dt" cx="0" cy="-4" r="4" fill="#3DD6C4"/><text class="k" x="14" y="0">DIAGNOSE</text>
+  <circle class="dt d2" cx="190" cy="-4" r="4" fill="#5B8CFF"/><text class="k" x="204" y="0">BUILD</text>
+  <circle class="dt d3" cx="340" cy="-4" r="4" fill="#9B86E8"/><text class="k" x="354" y="0">TEST</text>
+  <circle class="dt d4" cx="470" cy="-4" r="4" fill="#FFA24D"/><text class="k" x="484" y="0">SHIP</text>
+  <circle class="dt d5" cx="600" cy="-4" r="4" fill="#33C26E"/><text class="k" x="614" y="0">KEEP IT RUNNING</text>
+</g>
+<rect x="1" y="1" width="1198" height="118" rx="18" fill="none" stroke="#7FA8E0" stroke-opacity=".14"/>
+</svg>

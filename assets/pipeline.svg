@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 260" width="1200" height="260" role="img" aria-label="Request pipeline: message received, saved and numbered, receipt sent, triaged, routed, with a failure path at each stage.">
+<defs>
+  <linearGradient id="bgP" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050A12"/><stop offset="100%" stop-color="#07141F"/></linearGradient>
+  <pattern id="gP" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#5B8CFF" stroke-opacity=".05"/></pattern>
+  <style>
+    .hd{font:700 11px ui-monospace,Consolas,monospace;fill:#6FE3D4;letter-spacing:1.5px}
+    .st{font:600 13px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#E4EBF5}
+    .sb{font:400 10.5px ui-monospace,Consolas,monospace;fill:#65748C}
+    .fx{font:400 10.5px ui-monospace,Consolas,monospace;fill:#C98A4B}
+    .pk{fill:none;stroke:#3DD6C4;stroke-width:2;stroke-dasharray:7 9;animation:mv 2.6s linear infinite}
+    .pf{fill:none;stroke:#FFA24D;stroke-width:1.6;stroke-dasharray:4 7;opacity:.6;animation:mv 3.4s linear infinite}
+    @keyframes mv{to{stroke-dashoffset:-32}}
+    .bx{animation:fl 4.4s ease-in-out infinite}
+    .x2{animation-delay:.45s}.x3{animation-delay:.9s}.x4{animation-delay:1.35s}.x5{animation-delay:1.8s}
+    @keyframes fl{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+    .tok{animation:travel 5s linear infinite}
+    @keyframes travel{0%{transform:translateX(0);opacity:0}6%{opacity:1}94%{opacity:1}100%{transform:translateX(952px);opacity:0}}
+  </style>
+</defs>
+<rect width="1200" height="260" rx="20" fill="url(#bgP)"/>
+<rect width="1200" height="260" rx="20" fill="url(#gP)"/>
+<text class="hd" x="44" y="40">ONE REQUEST, END TO END — EVERY STAGE CAN FAIL WITHOUT LOSING THE TICKET</text>
+
+<path class="pk" d="M170 118 H 262 M400 118 H 492 M630 118 H 722 M860 118 H 952"/>
+<circle class="tok" cx="170" cy="118" r="4.5" fill="#6FE3D4"/>
+
+<g class="bx"><rect x="44" y="88" width="126" height="60" rx="14" fill="#0B1424" stroke="#5B8CFF" stroke-opacity=".3"/>
+<text class="st" x="60" y="114">Received</text><text class="sb" x="60" y="133">any channel</text></g>
+<g class="bx x2"><rect x="262" y="88" width="138" height="60" rx="14" fill="#0B1424" stroke="#3DD6C4" stroke-opacity=".3"/>
+<text class="st" x="278" y="114">Saved + numbered</text><text class="sb" x="278" y="133">atomic counter</text></g>
+<g class="bx x3"><rect x="492" y="88" width="138" height="60" rx="14" fill="#0B1424" stroke="#3DD6C4" stroke-opacity=".3"/>
+<text class="st" x="508" y="114">Receipt sent</text><text class="sb" x="508" y="133">customer's language</text></g>
+<g class="bx x4"><rect x="722" y="88" width="138" height="60" rx="14" fill="#0B1424" stroke="#9B86E8" stroke-opacity=".4"/>
+<text class="st" x="738" y="114">Triaged</text><text class="sb" x="738" y="133">typed agent output</text></g>
+<g class="bx x5"><rect x="952" y="88" width="204" height="60" rx="14" fill="#0B1424" stroke="#FFA24D" stroke-opacity=".35"/>
+<text class="st" x="968" y="114">Routed</text><text class="sb" x="968" y="133">specialist, queue or human</text></g>
+
+<path class="pf" d="M331 148 V 186 H 500"/>
+<path class="pf" d="M561 148 V 208 H 700"/>
+<path class="pf" d="M791 148 V 186 H 930"/>
+<text class="fx" x="344" y="182">rollback and retry once</text>
+<text class="fx" x="574" y="204">logged, never raised</text>
+<text class="fx" x="804" y="182">needs_manual_triage</text>
+<rect x="1" y="1" width="1198" height="258" rx="20" fill="none" stroke="#7FA8E0" stroke-opacity=".16"/>
+</svg>

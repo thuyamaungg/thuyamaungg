@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Role alignment: IT lead, solutions engineer, technical team lead, AI developer.">
+<defs>
+  <linearGradient id="bgR" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#050A12"/><stop offset="100%" stop-color="#07141F"/></linearGradient>
+  <linearGradient id="rA" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#1E7F72"/><stop offset="100%" stop-color="#3DD6C4"/></linearGradient>
+  <linearGradient id="rB" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#2A4E9E"/><stop offset="100%" stop-color="#5B8CFF"/></linearGradient>
+  <linearGradient id="rC" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#4B3A8C"/><stop offset="100%" stop-color="#9B86E8"/></linearGradient>
+  <linearGradient id="rD" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#9A5A1C"/><stop offset="100%" stop-color="#FFA24D"/></linearGradient>
+  <pattern id="gR" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#5B8CFF" stroke-opacity=".05"/></pattern>
+  <style>
+    .hd{font:700 11px ui-monospace,Consolas,monospace;fill:#6FE3D4;letter-spacing:1.5px}
+    .rl{font:600 15px 'Segoe UI',Ubuntu,Arial,sans-serif;fill:#E4EBF5}
+    .rn{font:400 11.5px ui-monospace,Consolas,monospace;fill:#7E8FA8}
+    .bar{transform-origin:left center;transform:scaleX(0);animation:gw 1.5s cubic-bezier(.2,.8,.3,1) forwards}
+    .g2{animation-delay:.2s}.g3{animation-delay:.4s}.g4{animation-delay:.6s}
+    @keyframes gw{to{transform:scaleX(1)}}
+  </style>
+</defs>
+<rect width="1200" height="300" rx="20" fill="url(#bgR)"/>
+<rect width="1200" height="300" rx="20" fill="url(#gR)"/>
+<text class="hd" x="44" y="42">WHAT I'M AIMING AT</text>
+
+<g transform="translate(44,96)">
+  <text class="rl" x="0" y="0">IT lead</text>
+  <rect x="300" y="-15" width="620" height="20" rx="10" fill="#0E1826"/>
+  <rect class="bar" x="300" y="-15" width="600" height="20" rx="10" fill="url(#rA)"/>
+  <text class="rn" x="936" y="0">two decades owning the outcome</text>
+</g>
+<g transform="translate(44,156)">
+  <text class="rl" x="0" y="0">Solutions engineer</text>
+  <rect x="300" y="-15" width="620" height="20" rx="10" fill="#0E1826"/>
+  <rect class="bar g2" x="300" y="-15" width="560" height="20" rx="10" fill="url(#rB)"/>
+  <text class="rn" x="936" y="0">technical depth, three languages</text>
+</g>
+<g transform="translate(44,216)">
+  <text class="rl" x="0" y="0">Technical team lead</text>
+  <rect x="300" y="-15" width="620" height="20" rx="10" fill="#0E1826"/>
+  <rect class="bar g3" x="300" y="-15" width="520" height="20" rx="10" fill="url(#rC)"/>
+  <text class="rn" x="936" y="0">ran a business and a network</text>
+</g>
+<g transform="translate(44,276)">
+  <text class="rl" x="0" y="0">AI developer</text>
+  <rect x="300" y="-15" width="620" height="20" rx="10" fill="#0E1826"/>
+  <rect class="bar g4" x="300" y="-15" width="470" height="20" rx="10" fill="url(#rD)"/>
+  <text class="rn" x="936" y="0">three systems shipped and tested</text>
+</g>
+</svg>
